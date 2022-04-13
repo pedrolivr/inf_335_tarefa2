@@ -3,7 +3,6 @@ package br.unicamp.ic.inf335.beans;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 
 import org.junit.jupiter.api.DisplayName;
@@ -43,18 +42,15 @@ class ProdutoBeanTest {
 		Collections.sort(produtos);
 		
 		for(i=0; i< lengh; i++) {
-			if(sample[i]== produtos.get(i).getValor()) 
-			{
+			if(sample[i]== produtos.get(i).getValor()){
 				acuml = acuml + 1;
 			}
-			else 
-			{
+			else {
 				acuml = 0;
 			}
 		}
 			
 		assertTrue(acuml!=lengh);	
 								
-		}
-
+	}
 }

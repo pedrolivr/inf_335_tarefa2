@@ -66,7 +66,8 @@ public class ProdutoBean implements java.io.Serializable, Comparable<ProdutoBean
 	
 	@Override
 	public int compareTo(ProdutoBean p) {
-		if (valor > p.getValor()) {
+		if (valor >
+		p.getValor()) {
 			return 1;
 		} else if (valor > p.getValor()) {
 			return -1;
