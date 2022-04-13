@@ -33,9 +33,8 @@ class AnuncianteBeanTest {
 		AnuncianteBean anunciante = new AnuncianteBean("Pedro", "47777752406", anuncios);
 		
 		
-		
-		
-		double valorComDesconto = oferta1.getValor();		
+			
+	
 		double mediaValores = anunciante.valorMedioAnuncios();
 		double mediaCalculada;
 		int i = 0;
@@ -50,7 +49,5 @@ class AnuncianteBeanTest {
 				
 		
 		assertTrue(mediaCalculada == mediaValores);
-		
 	}
-
 }

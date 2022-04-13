@@ -20,7 +20,7 @@ class ProdutoBeanTest {
 	
 
 	@Test
-	@DisplayName("Testa o método de compareTo")
+	@DisplayName("Testa o e valida o método compareTo()")
 	void test() {
 		
 		produtos.add(prod1);
@@ -50,7 +50,31 @@ class ProdutoBeanTest {
 			}
 		}
 			
-		assertTrue(acuml!=lengh);	
-								
+		assertTrue(acuml!=lengh);							
+	}
+	
+	@Test
+	@DisplayName("Testa o e valida os métodos de get() e set()")
+	void test1() {
+		
+		String novoCodigo ="002";
+		String novaDecricao ="motorola";
+		String novoEstado = "usado";
+		String novoNome = "Celular";
+		Double novoValor = 2000.00;
+		
+		prod1.setCodigo(novoCodigo);
+		prod1.setDescricao(novaDecricao);
+		prod1.setEstado(novoEstado);
+		prod1.setNome(novoNome);
+		prod1.setValor(novoValor);
+		
+		assertEquals(prod1.getCodigo(), novoCodigo);
+		assertEquals(prod1.getDescricao(), novaDecricao);
+		assertEquals(prod1.getEstado(), novoEstado);
+		assertEquals(prod1.getNome(), novoNome);
+		assertEquals(prod1.getValor(), novoValor);
+		
 	}
 }
+
