@@ -27,8 +27,5 @@ class AnuncioBeanTest {
 		double valorComDesconto = anuncio.getValor();
 		
 		assertTrue((prod1.getValor()*anuncio.getDesconto())==valorComDesconto);
-		
-		
 	}
-
 }

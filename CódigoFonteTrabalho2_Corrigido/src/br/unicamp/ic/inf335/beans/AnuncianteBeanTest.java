@@ -33,17 +33,14 @@ class AnuncianteBeanTest {
 		AnuncianteBean anunciante = new AnuncianteBean("Pedro", "47777752406", anuncios);
 		
 		
-			
 	
 		double mediaValores = anunciante.valorMedioAnuncios();
 		double mediaCalculada;
-		int i = 0;
 		double aculm =0 ;
-		int lengh = anuncios.size();
 		
 		
-		for(i=0; i< lengh; i=i+1)			
-			aculm = aculm + anuncios.get(i).getProduto().getValor();
+		for(int i=0; i< anuncios.size(); i=i+1)			
+			aculm = aculm + anuncios.get(i).getValor();
 		 
 		mediaCalculada = aculm/(anuncios.size());
 				

@@ -94,6 +94,6 @@ public class AnuncioBean implements java.io.Serializable {
 	 * @return retona valor do produto menos o desconto 
 	 */
 	public Double getValor() {
-		return produto.getValor()-(produto.getValor()/desconto);
+		return produto.getValor()-(produto.getValor()*desconto);
 	}
 }
